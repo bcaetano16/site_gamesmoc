@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@600&family=Raleway:ital,wght@1,200&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -23,8 +25,24 @@
                     <li>
                         <a href="#contact">Contato</a>
                     </li>
+                    <li>
+                        <a href="./cadastro.html">
+                            <input id="register" type="button" value="Cadastre-se">
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
+            <br />
+            <div>
+                <label for="name">Nome do usuário:</label>
+                <input type="text">
+                <label for="password">Senha:</label>
+                <input id="password" type="password">
+                <a href="#" id="">
+                    <input type="button" value="Logar">
+                </a>
+            </div>
         </div>
     </header>
     <section id="about">
@@ -33,16 +51,20 @@
             <div>
                 <h2>Sobre a loja</h2>
                 <p>
-                    Loja games moc, sua loja de games no bairro Santa Rita, apresentando diversos consoles, como 
+                    Loja games moc, sua loja de games no bairro Santa Rita, apresentando diversos consoles, como
                     Nintendo, Xbox e Playstation e uma variedades de jogos e acessórios. Óculos de realidade virtual.
-                    Venha fazer um orçamento conosco. Parcelamos suas compras em até 12x no cartão, aceitamos PIX e boletos bancários.
-                    
+                    Venha fazer um orçamento conosco. Parcelamos suas compras em até 12x no cartão, aceitamos PIX e
+                    boletos bancários.
+
                 </p>
                 <p>
-                    GamesMoc é uma loja de jogos para PS3, PS4 e PS5, além de Gift Cards para diversas plataformas. 
-                    Oferecemos lançamentos e clássicos pelos melhores preços do mercado. Os jogos são enviados para qualquer 
-                    lugar do Brasil, com agilidade e segurança. Garantimos também suporte técnico de qualidade para solucionar qualquer problema. 
-                    Nascemos com a intenção de oferecer um serviço de qualidade para que tenha uma experiência extraordinária em sua compra.
+                    GamesMoc é uma loja de jogos para PS3, PS4 e PS5, além de Gift Cards para diversas plataformas.
+                    Oferecemos lançamentos e clássicos pelos melhores preços do mercado. Os jogos são enviados para
+                    qualquer
+                    lugar do Brasil, com agilidade e segurança. Garantimos também suporte técnico de qualidade para
+                    solucionar qualquer problema.
+                    Nascemos com a intenção de oferecer um serviço de qualidade para que tenha uma experiência
+                    extraordinária em sua compra.
                 </p>
                 <ul class="brands-list">
                     <li> <img src="./images/Nintendo-Logo-1970-1975.png" id="nintendo" alt="logo nintendo"></a></li>
@@ -55,46 +77,51 @@
     <section id="contact">
         <div class="container">
             <h2>Contato</h2>
-        <div class="contact-methods">
-            <div>
-                <h3>Fale conosco</h3>
-                <form>
-                    <input type="text" placeholder="Seu nome" required />
-                    <input type="email" placeholder="Seu email" required/>
-                    <input type="tel" placeholder="Seu telefone (opcional)" />
-                    <textarea placeholder="Sua mensagem" required></textarea>
-                    <button type="submit"> Enviar</button>
-                </form>
+            <div class="contact-methods">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form id="fale">
+                        <input type="text" placeholder="Seu nome" required />
+                        <input type="email" placeholder="Seu email" required />
+                        <input type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit"> Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" tittle="Siga-nos no Instagram">
+                                <img src="./images/logo-instagram.webp" alt="Logo do instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" tittle="Siga-nos no Facebook">
+                                <img src="./images/facebook-logo-3-1.png" alt="Logo do facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" tittle="Visite nosso canal no youtube">
+                                <img src="./images/new-youtube-logo-840x402.webp" alt="Logo do youtube" />
+                            </a>
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h3>Venha até nós</h3><br />
+                    <p>Rua Ana Dionísia nº 423, Clarindo Lopes - Montes CLaros - MG</p>
+                    <p>Telefone: (38) 99854-1314 <img class="whatsapp" src="./images/icone-du-logo-whatsapp-vert.png" alt="Logo do whatsapp" />
+                    </a><br/></p><!--<a href="#" tittle="Entre em contato">-->
+                        
+                    <img class="store-fronts" src="./images/kylian-mbappe-gen5-km-crop-social-1920x1080.webp"
+                        alt="fifa 23" />
+                </div>
             </div>
-        
-            <div>
-                <h3>Nos acompanhe</h3>
-                <ul class="social-links">
-                    <li>
-                        <a href="#" tittle="Siga-nos no Instagram">
-                            <img src="./images/logo-instagram.webp" alt="Logo do instagram"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" tittle="Siga-nos no Facebook">
-                            <img src="./images/facebook-logo-3-1.png" alt="Logo do facebook"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" tittle="Visite nosso canal no youtube">
-                            <img src="./images/new-youtube-logo-840x402.webp" alt="Logo do youtube"/>
-                        </a>
-                    </li>
-                </ul>
-            
-            </div>
-            <div>
-                <h3>Venha até nós</h3><br/>
-                <p>Rua Ana Dionísia nº 423, Clarindo Lopes - Montes CLaros - MG</p>
-                <p>Telefone: (38) 99854-1314</p><br/>
-                <img class="store-fronts" src="./images/kylian-mbappe-gen5-km-crop-social-1920x1080.webp" alt="fifa 23"/>
-            </div>
-        </div>
         </div>
     </section>
     <footer>

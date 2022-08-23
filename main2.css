@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header h1,
+section h2,
+section h3 {
+    /*font-family: 'DynaPuff', cursive;*/
+    font-size: 32px;
+    font-weight: normal;
+}
+
+header {
+    display: block;
+    padding: 16px 0;
+    background-color: rgb(9, 26, 114);
+    color: white;
+    font-family: 'DynaPuff', cursive;
+
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 64px;
+    margin-top: 32  px;
+    display: block;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section {
+    display: block;
+    width: 90%;
+    height: 123px;
+    margin: 0 auto;
+}
+
+form button {
+    font-size: 16px;
+}

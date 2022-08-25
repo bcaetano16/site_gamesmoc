@@ -12,35 +12,33 @@
 <body>
     <header>
         <div class="container">
-        <h1>GAMES MOC</h1>
-        <h2>Seus Dados</h2>
+            <h1>GAMES MOC</h1>
+            <h2>Seus Dados</h2>
     </header>
     <section>
-       
-            <form>
-                <input id="name" required="required" type="name" placeholder="Digite seu nome"><br />
-                <label for="adress">Endereço</label><br /><label for="adress"><label for="number" type="number"></label>
-                    <input type="number">
-                    <input id="adress" name="adress" required="required" type="text"><br />
-                    <label for="email"> Seu email</label><br />
-                    <input id="email" type="email"><br />
-                    <label for="tel">Telefone</label><br />
-                    <input type="tel"><br />
-                    <label for="password"> Nova Senha</label><br />
-                    <input id="password" type="password" required><br />
-                    <label for="password"> Confirme a nova Senha</label><br />
-                    <input id="password" type="password" required><br />
 
-                    <button type="submit"> Cadastrar</button>         
-            </form>
+        <form id="form-cadastro">
+            <input id="nome-cliente" required="required" type="text" placeholder="Nome completo do cliente"><br />
+            <label for="adress">Endereço</label><br />
+                <input id="endereco-cliente" name="adress" required="required" type="text"><br/> <label for="number" >Nº</label><br/>
+                <input id="numero-residencia" name="number" required="required" type="number"><br/>
+                <label for="email"> Seu email</label><br />
+                <input id="email-cliente" type="email"><br />
+                <label for="tel">Telefone</label><br />
+                <input type="tel" id="telefone-cliente"><br />
+                <label for="password"> Nova Senha</label><br />
+                <input id="password" type="password" required><br />
+                <label for="password"> Confirme a nova Senha</label><br />
+                <input id="password2" type="password" required><br />
+                <button onclick="validaLogin()"> Login</button>
+        </form>
         </div>
-        <div class="container">
             <p>
                 Já tem conta?
                 <a href="index.html"> Ir para Login </a>
             </p>
-        </div>
     </section>
+    <script src="./cadastro.js"></script>
 </body>
 
 </html>

@@ -29,22 +29,22 @@
                         <a href="./cadastro.html">
                             <input id="register" type="button" value="Cadastre-se">
                         </a>
-                    </li>
 
+                    </li>
+                    <li>
+                        <!--<form>-->
+                        <label for="email">Nome do usuario:</label>
+                        <input type="email" id="login-usuario">
+                        <label for="password">Senha:</label>
+                        <input type="password" id="password-login">
+                        <button id="login" onclick="validaLogin2()"> Login</button>
+                        <!--</form>-->
+                    </li>
                 </ul>
             </nav>
-            <br />
-            <div>
-                <label for="name">Nome do usuário:</label>
-                <input type="text">
-                <label for="password">Senha:</label>
-                <input id="password" type="password">
-                <a href="#" id="">
-                    <input type="button" value="Logar">
-                </a>
-            </div>
         </div>
     </header>
+
     <section id="about">
         <div class="container">
             <img class="store-front" src="./images/cecile-new-gamer-31.jpg" alt="Fachada loja cecile">
@@ -80,12 +80,12 @@
             <div class="contact-methods">
                 <div>
                     <h3>Fale conosco</h3>
-                    <form id="fale">
-                        <input type="text" placeholder="Seu nome" required />
+                    <form id="form-fale">
+                        <input type="text"  id="nome-cadastro" placeholder="Seu nome" required />
                         <input type="email" placeholder="Seu email" required />
                         <input type="tel" placeholder="Seu telefone (opcional)" />
                         <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit"> Enviar</button>
+                        <button onclick="FaleConosco()"> Enviar dados</button>
                     </form>
                 </div>
                 <div>
@@ -107,7 +107,7 @@
                             </a>
                         </li>
                         <li>
-                            
+
                         </li>
                     </ul>
 
@@ -115,9 +115,11 @@
                 <div>
                     <h3>Venha até nós</h3><br />
                     <p>Rua Ana Dionísia nº 423, Clarindo Lopes - Montes CLaros - MG</p>
-                    <p>Telefone: (38) 99854-1314 <img class="whatsapp" src="./images/icone-du-logo-whatsapp-vert.png" alt="Logo do whatsapp" />
-                    </a><br/></p><!--<a href="#" tittle="Entre em contato">-->
-                        
+                    <p>Telefone: (38) 99854-1314 <img class="whatsapp" src="./images/icone-du-logo-whatsapp-vert.png"
+                            alt="Logo do whatsapp" />
+                        </a><br /></p>
+                    <!--<a href="#" tittle="Entre em contato">-->
+
                     <img class="store-fronts" src="./images/kylian-mbappe-gen5-km-crop-social-1920x1080.webp"
                         alt="fifa 23" />
                 </div>

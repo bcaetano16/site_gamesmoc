@@ -5,34 +5,51 @@
 
 }
 
-header h1,
-section h2,
-section h3 {
-    /*font-family: 'DynaPuff', cursive;*/
-    font-size: 32px;
-    font-weight: normal;
-}
-
 header {
     display: block;
     padding: 16px 0;
     background-color: rgb(9, 26, 114);
     color: white;
-    font-family: 'DynaPuff', cursive;
+    /*font-family: 'DynaPuff', cursive;*/
+    font-family: 'Raleway', sans-serif;
 
 }
 
 .container {
+    display: block;
+    align-items: center;
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
     margin-left: 64px;
-    margin-top: 32  px;
-    display: block;
+    margin-top: 16px;   
     font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-family: 'Raleway', sans-serif;
+    
 }
 
+form button {
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: 'DynaPuff', cursive;   
+
+}
+
+.form-cliente{
+    margin-top: 16px;
+    margin-left: 32px;
+    display: block;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color:rgb(9, 26, 114);
+}
+
+.form-cliente form{
+    width: '50%';
+}
 section {
     display: block;
     width: 90%;
@@ -40,6 +57,3 @@ section {
     margin: 0 auto;
 }
 
-form button {
-    font-size: 16px;
-}

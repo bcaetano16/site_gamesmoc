@@ -31,14 +31,14 @@
                         </a>
 
                     </li>
-                    <li>
-                        <!--<form>-->
+                    <li id="form-login">
+                        <form>
                         <label for="email">Nome do usuario:</label>
                         <input type="email" id="login-usuario">
                         <label for="password">Senha:</label>
                         <input type="password" id="password-login">
                         <button id="login" onclick="validaLogin2()"> Login</button>
-                        <!--</form>-->
+                        </form>
                     </li>
                 </ul>
             </nav>
@@ -47,7 +47,7 @@
 
     <section id="about">
         <div class="container">
-            <img class="store-front" src="./images/cecile-new-gamer-31.jpg" alt="Fachada loja cecile">
+
             <div>
                 <h2>Sobre a loja</h2>
                 <p>
@@ -66,11 +66,15 @@
                     Nascemos com a intenção de oferecer um serviço de qualidade para que tenha uma experiência
                     extraordinária em sua compra.
                 </p>
+
                 <ul class="brands-list">
                     <li> <img src="./images/Nintendo-Logo-1970-1975.png" id="nintendo" alt="logo nintendo"></a></li>
                     <li> <img src="./images/playstation.png" alt="logo playstation"></a></li>
                     <li> <img src="./images/Xbox-Logo-2012-presente.png" alt="logo xbox"></a></li>
                 </ul>
+                <img class="store-front" src="./images/cecile-new-gamer-31.jpg" alt="Fachada loja cecile">
+
+                
             </div>
         </div>
     </section>
@@ -79,16 +83,16 @@
             <h2>Contato</h2>
             <div class="contact-methods">
                 <div>
-                    <h3>Fale conosco</h3>
+                    <h3 id="fale">Fale conosco</h3>
                     <form id="form-fale">
-                        <input type="text"  id="nome-cadastro" placeholder="Seu nome" required />
+                        <input type="text" id="nome-cadastro" placeholder="Seu nome" required />
                         <input type="email" placeholder="Seu email" required />
                         <input type="tel" placeholder="Seu telefone (opcional)" />
                         <textarea placeholder="Sua mensagem" required></textarea>
                         <button onclick="FaleConosco()"> Enviar dados</button>
                     </form>
                 </div>
-                <div>
+                <div class="nos-acompanhe">
                     <h3>Nos acompanhe</h3>
                     <ul class="social-links">
                         <li>

@@ -20,13 +20,16 @@ form button {
 }
 
 header {
-    padding: 16px 0;
+    max-width: 1366px;
+    width: 100%;
+    padding: 32px 16px;
     background-color: rgb(9, 26, 114);
-    color: white
+    color: white;
+    align-items: center;
 }
 
 header nav li {
-    display: inline;
+    display: inline-flex;
     margin-left: 16px;
     font-size: 14px;
     font-weight: bold;
@@ -46,8 +49,8 @@ header li a {
 
 header nav li form {
     height: 8px;
-    width:min-content;
-    display: inline-block;
+    width: min-content;
+    display: flex;
     margin-top: 16px;
     cursor: pointer;
     color: #ecf0f1;
@@ -59,30 +62,26 @@ header nav li form {
     font-family: 'DynaPuff', cursive;
 }
 
-header nav li a #register{
+header nav li a #register {
     text-decoration: none;
     background-color: rgb(9, 26, 114);
     color: #fff;
     font-size: 14px;
     cursor: pointer;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-header nav li #login{
+header nav li #login {
+    height: 16px;
+    display: flex;
     text-decoration: none;
     background-color: rgb(9, 26, 114);
     color: #fff;
     font-size: 14px;
     cursor: pointer;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.form-login {
-    display: block;
-    width: 320px;
-    margin-bottom: 8px;
-    padding: 8px;
-}
 
 .container {
     max-width: 1366px;
@@ -107,18 +106,42 @@ section .container {
 
 }
 
-.contact-methods form{
+.contact-methods, h2{
+
+    margin-left: 32px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-methods #fale{
+    margin-left: 64px;
+}
+
+#contact h2{
+
+    border-bottom: 2px solid #000;
+}
+
+.contact-methods form {
+
+    margin-left: 64px;
     align-items: flex-start;
     text-decoration: none;
     background-color: rgb(9, 26, 114);
     color: #fff;
     font-size: 14px;
     cursor: pointer;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-methods input, textarea{
+    width: 256px;
 }
 
 section {
     padding: 24px 0;
+    color: rgb(9, 26, 114);
 }
 
 section h2 {
@@ -128,21 +151,22 @@ section h2 {
 
 }
 
-section {
-    color: rgb(9, 26, 114);
-}
 
 section p {
+    max-height: 400px;
     margin-bottom: 8px;
     margin-right: 48px;
+    text-align: justify;
 }
 
 .store-front {
+    margin-top: 32px;
     max-height: 400px;
     margin-right: 32px;
 }
 
 .social-links img {
+    display: inline;
     height: 24px;
 }
 
@@ -157,11 +181,6 @@ section p {
 
 #contact .container {
     display: block;
-}
-
-.contact-methods {
-    display: flex;
-    justify-content: space-between;
     
 }
 
@@ -169,7 +188,6 @@ form input,
 form textarea,
 form button {
     display: block;
-    width: 320px;
     margin-bottom: 8px;
     padding: 8px;
 }
@@ -218,3 +236,62 @@ footer {
     margin-inline: 8px;
 }
 
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 200px;
+        padding: 32px 0;
+        margin-left: 0px;
+        display: flex;
+    }
+
+    header nav li {
+        float: none;
+
+    }
+
+    section #about {
+        display: block;
+        width: 100%;
+
+    }
+
+    #contact {
+        padding-left: 32px;
+    }
+
+    #contact p {
+        font-size: 16px;
+        margin-bottom: 8px;
+        margin-right: 48px;
+    }
+
+    #contact .nos-acompanhe {
+        padding-left: 32px;
+    }
+
+
+    .store-fronts {
+        max-height: 150px;
+        margin-right: 32px;
+    }
+}
+
+
+
+/*Celular*/
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 100px;
+        padding: 32px 0;
+        margin-left: 0px;
+        display: flex;
+    }
+
+    section #about {
+        display: block;
+
+    }}

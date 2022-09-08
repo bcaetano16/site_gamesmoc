@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -381,3 +382,302 @@ footer {
 
     }
 }
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+    font-family: 'Raleway', sans-serif;
+}
+
+header h1,
+section h2,
+section h3,
+form button {
+    font-family: 'DynaPuff', cursive;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+header {
+    max-width: 1366px;
+    width: 100%;
+    padding: 32px 16px;
+    background-color: rgb(9, 26, 114);
+    color: white;
+    align-items: center;
+}
+
+header nav li {
+    display: inline-flex;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    background-color: rgb(9, 26, 114);
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-family: 'DynaPuff', cursive;
+}
+
+header nav li form {
+    height: 8px;
+    width: min-content;
+    display: flex;
+    margin-top: 16px;
+    cursor: pointer;
+    color: #ecf0f1;
+    text-decoration: none;
+    background-color: rgb(9, 26, 114);
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    font-family: 'DynaPuff', cursive;
+}
+
+header nav li a #register {
+    text-decoration: none;
+    background-color: rgb(9, 26, 114);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header nav li #login {
+    height: 16px;
+    display: flex;
+    text-decoration: none;
+    background-color: rgb(9, 26, 114);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.container {
+    max-width: 1366px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brands-list img {
+    height: 36px;
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline;
+
+}
+
+.contact-methods, h2{
+
+    margin-left: 32px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contact-methods #fale{
+    margin-left: 64px;
+}
+
+#contact h2{
+
+    border-bottom: 2px solid #000;
+}
+
+.contact-methods form {
+
+    margin-left: 64px;
+    align-items: flex-start;
+    text-decoration: none;
+    background-color: rgb(9, 26, 114);
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-methods input, textarea{
+    width: 256px;
+}
+
+section {
+    padding: 24px 0;
+    color: rgb(9, 26, 114);
+}
+
+section h2 {
+    margin-bottom: 16px;
+    font-size: 30px;
+    align-items: flex-start;
+
+}
+
+
+section p {
+    max-height: 400px;
+    margin-bottom: 8px;
+    margin-right: 48px;
+    text-align: justify;
+}
+
+.store-front {
+    margin-top: 32px;
+    max-height: 400px;
+    margin-right: 32px;
+}
+
+.social-links img {
+    display: inline;
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+    
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+section h3 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+form button {
+    background-color: rgb(9, 26, 114);
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(46, 66, 167);
+
+}
+
+input:focus,
+textarea:focus {
+    outline-color: rgb(9, 26, 114);
+}
+
+.store-fronts {
+    max-height: 300px;
+    margin-right: 32px;
+}
+
+footer {
+    background-color: rgb(9, 26, 114);
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+.whatsapp {
+    height: 24px;
+    margin-inline: 8px;
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+
+    header {
+        height: 200px;
+        padding: 32px 0;
+        margin-left: 0px;
+        display: flex;
+    }
+
+    header nav li {
+        float: none;
+
+    }
+
+    section #about {
+        display: block;
+        width: 100%;
+
+    }
+
+    #contact {
+        padding-left: 32px;
+    }
+
+    #contact p {
+        font-size: 16px;
+        margin-bottom: 8px;
+        margin-right: 48px;
+    }
+
+    #contact .nos-acompanhe {
+        padding-left: 32px;
+    }
+
+
+    .store-fronts {
+        max-height: 150px;
+        margin-right: 32px;
+    }
+}
+
+
+
+/*Celular*/
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: 100px;
+        padding: 32px 0;
+        margin-left: 0px;
+        display: flex;
+    }
+
+    section #about {
+        display: block;
+
+    }}
+>>>>>>> 47945aa75f4bc68a1b5d0c68c838d5da432f09f6

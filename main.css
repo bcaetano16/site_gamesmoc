@@ -106,7 +106,8 @@ section .container {
 
 }
 
-.contact-methods, h2{
+.contact-methods,
+h2 {
 
     margin-left: 32px;
     display: flex;
@@ -114,18 +115,16 @@ section .container {
 
 }
 
-.contact-methods #fale{
+.contact-methods #fale {
     margin-left: 64px;
 }
 
-#contact h2{
+#contact h2 {
 
     border-bottom: 2px solid #000;
 }
 
 .contact-methods form {
-
-    margin-left: 64px;
     align-items: flex-start;
     text-decoration: none;
     background-color: rgb(9, 26, 114);
@@ -135,7 +134,8 @@ section .container {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.contact-methods input, textarea{
+.contact-methods input,
+textarea {
     width: 256px;
 }
 
@@ -181,7 +181,7 @@ section p {
 
 #contact .container {
     display: block;
-    
+
 }
 
 form input,
@@ -239,11 +239,22 @@ footer {
 /*Tablet*/
 @media screen and (max-width: 768px) {
 
+    body {
+        width: 100%;
+        align-items: center;
+    }
+
     header {
         height: 200px;
-        padding: 32px 0;
-        margin-left: 0px;
+        /*padding: 32px 0;*/
         display: flex;
+    }
+
+
+    header h1 {
+        margin-left: 32px;
+        font-size: 56px;
+        border-radius: 3px;
     }
 
     header nav li {
@@ -251,14 +262,29 @@ footer {
 
     }
 
-    section #about {
-        display: block;
-        width: 100%;
-
+    .container {
+        max-width: 768px;
+        width: 98%;
+        margin: 0 auto;
     }
 
-    #contact {
-        padding-left: 32px;
+    section #about,
+    p,
+    .brands-list {
+        display: block;
+        width: 80%;
+        margin-left: 50px;
+        align-items: center;
+    }
+
+    .contact-methods form {
+        align-items: flex-start;
+        text-decoration: none;
+        background-color: rgb(9, 26, 114);
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
     #contact p {
@@ -268,16 +294,23 @@ footer {
     }
 
     #contact .nos-acompanhe {
-        padding-left: 32px;
+        margin-left: 16px;
+        display: inline;
     }
 
+
+    .store-front {
+        margin-left: 56px;
+    }
 
     .store-fronts {
         max-height: 150px;
         margin-right: 32px;
+        align-items: center;
     }
-}
 
+
+}
 
 
 /*Celular*/
@@ -285,13 +318,66 @@ footer {
 @media screen and (max-width: 600px) {
 
     header {
-        height: 100px;
-        padding: 32px 0;
-        margin-left: 0px;
-        display: flex;
+        margin:0 auto;
+        max-width: 599px;
+        width: 100%;
+        height: 156px;
+        padding: 32px 16px;
+        background-color: rgb(9, 26, 114);
+        color: white;
+        align-items: center;
     }
 
+    header h1 {
+        font-size: 32px;
+    }
+
+    .container{
+        margin: 16px 0;
+        max-width: 599px;
+        width: 98%;
+        margin: 0 auto;
+    }
+    nav li{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        font-size: 10px;
+    }
+
+    #form-login{
+        height: 32px;
+        max-width: 599px;
+        width: 98%;
+        
+    }
+
+    #form-login input{
+        max-width:min-content;
+        height: 20px;
+        width: 100px;
+        
+    }
+
+    .store-front {
+        margin-left: 40px;
+        height: 360px;
+    }
+
+    .store-fronts {
+        display: inline;
+        max-height: 150px;
+        margin-right: 32px;
+        align-items: center;
+    }   
+
+    .contact-methods, p{
+        margin: 16px 0;
+        max-width: 599px;
+        width: 100%;
+    }
     section #about {
         display: block;
 
-    }}
+    }
+}

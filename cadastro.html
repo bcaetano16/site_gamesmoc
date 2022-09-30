@@ -22,29 +22,95 @@
     <section>
 
         <form class="form-cliente" id="form-cadastro">
-            <input id="nome-cliente" required="required" type="text" placeholder="Nome completo do cliente"><br />
-            <p id="teste">
-
-            </p>
+            <input style="height: 24px;" id="nome-cliente" type="text" name="nome"
+                placeholder="Nome completo do cliente"><br />
             <label for="adress">Endereço</label><br />
-                <input id="endereco-cliente" name="adress" required="required" type="text"><br/> <label for="number" >Nº</label><br/>
-                <input id="numero-residencia" name="number" required="required" type="number"><br/>
-                <label for="email"> Seu email</label><br />
-                <input id="email-cliente" type="email"><br />
-                <label for="tel">Telefone</label><br />
-                <input type="tel" id="telefone-cliente"><br />
-                <label for="password"> Nova Senha</label><br />
-                <input id="password" type="password" required><br />
-                <label for="password"> Confirme a nova Senha</label><br />
-                <input id="password2" type="password" required><br />
-                <button onclick="validaLogin()"> Login</button>
+            <input style="width:300px; height: 24px;" id="endereco-cliente" name="endereco" 
+                type="text"><br />
+            <label for="number">Nº</label><br />
+            <input style="height: 24px ;width:60px" id="numero-residencia" name="number"
+                type="number"><br />
+            <label for="email"> Seu email</label><br />
+            <input style="width:300px;height: 24px" id="email-cliente" type="email" name="email"><br />
+            <label for="number">CEP</label></br>
+            <input type="number" id="cep" name="cep"></br>
+
+            <label for="tel">Telefone</label><br />
+            <input type="tel" name="telefone" id="telefone-cliente"><br />
+            <label for="cpf">CPF</label></br>
+            <input type="number" id="cpf" name="cpf"></br>
+            <label for="password"> Nova Senha</label><br />
+            <input id="password" type="password" name="senha" required><br />
+            <label for="password"> Confirme a nova Senha</label><br />
+            <input id="password2" type="password" name="novasenha" required><br />
+            <button id="button-conosco" type="submit">Enviar</button>
         </form>
         </div>
-            <p>
-                Já tem conta?
-                <a href="index.html"> Ir para Login </a>
-            </p>
+        <p>
+            Já tem conta?
+            <a href="index.html"> Ir para Login </a>
+        </p>
     </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./Js/jquery.mask.min.js"></script>
+    <script src="./Js/jquery.validate.min.js"></script>
+    <script src="./Js/messages_pt_BR.min.js"></script>
+    <script>  $(document).ready(function () {
+
+            /*  $('#carousel-images').slick({ autoplay: true, }); $('.menu-hamburguer').click(function () {
+        $('nav').slideToggle();  })*/
+
+            $("#telefone").mask('(00) 00000-0000')
+
+            $("#cep").mask('00000-000')
+
+            $("#cpf").mask('000000000-00')
+
+            $('form').validate({
+                rules: {
+                    nome: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    cep: {
+                        required: true
+                    },
+                    telefone: {
+                        required: true
+                    },
+                    cpf: {
+                        required: true,
+                        cpf:true
+                    },
+                    senha: {
+                        required:true
+                    },
+                    novasenha:{
+                        required: true
+                    },
+
+                },
+                messages: {
+                    nome: 'Por favor, insira o seu nome'
+                },
+                submitHandler: function (form) {
+                    console.log(form)
+                },
+                invalidHandler: function (evento, validador) {
+                    let camposIncorretos = validador.numberOfInvalids();
+                    if (camposIncorretos) {
+                        alert(`Existem ${camposIncorretos} campos Incorretos`)
+                    }
+                }
+
+            })
+        }) </script>
     <script src="./assets/js/cadastro.js"></script>
 </body>
 

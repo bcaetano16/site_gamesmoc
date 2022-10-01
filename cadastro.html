@@ -19,99 +19,100 @@
             <h1>GAMES MOC</h1>
             <h2>Seus Dados</h2>
     </header>
+
     <section>
-
-        <form class="form-cliente" id="form-cadastro">
-            <input style="height: 24px;" id="nome-cliente" type="text" name="nome"
-                placeholder="Nome completo do cliente"><br />
-            <label for="adress">Endereço</label><br />
-            <input style="width:300px; height: 24px;" id="endereco-cliente" name="endereco" 
-                type="text"><br />
-            <label for="number">Nº</label><br />
-            <input style="height: 24px ;width:60px" id="numero-residencia" name="number"
-                type="number"><br />
-            <label for="email"> Seu email</label><br />
-            <input style="width:300px;height: 24px" id="email-cliente" type="email" name="email"><br />
-            <label for="number">CEP</label></br>
-            <input type="number" id="cep" name="cep"></br>
-
-            <label for="tel">Telefone</label><br />
-            <input type="tel" name="telefone" id="telefone-cliente"><br />
-            <label for="cpf">CPF</label></br>
-            <input type="number" id="cpf" name="cpf"></br>
-            <label for="password"> Nova Senha</label><br />
-            <input id="password" type="password" name="senha" required><br />
-            <label for="password"> Confirme a nova Senha</label><br />
-            <input id="password2" type="password" name="novasenha" required><br />
-            <button id="button-conosco" type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form>
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="cep">cep:</label>
+                    <input type="cep" id="cep" name="cep">
+                </div>
+                <div class="form-campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button id="button-conosco" type="submit">Enviar</button>
+            </form>
         </div>
-        <p>
-            Já tem conta?
-            <a href="index.html"> Ir para Login </a>
-        </p>
-    </section>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./Js/jquery.mask.min.js"></script>
-    <script src="./Js/jquery.validate.min.js"></script>
-    <script src="./Js/messages_pt_BR.min.js"></script>
-    <script>  $(document).ready(function () {
 
-            /*  $('#carousel-images').slick({ autoplay: true, }); $('.menu-hamburguer').click(function () {
-        $('nav').slideToggle();  })*/
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./assets/js/jquery.mask.min.js"></script>
+        <script src="./assets/js/jquery.validate.min.js"></script>
+        <script src="./assets/js/messages_pt_BR.min.js"></script>
+        <script>  $(document).ready(function () {
 
-            $("#telefone").mask('(00) 00000-0000')
+                /*  $('#carousel-images').slick({ autoplay: true, }); $('.menu-hamburguer').click(function () {
+            $('nav').slideToggle();  })*/
 
-            $("#cep").mask('00000-000')
+                $("#telefone").mask('(00) 00000-0000')
 
-            $("#cpf").mask('000000000-00')
+                $("#cep").mask('00000-000')
 
-            $('form').validate({
-                rules: {
-                    nome: {
-                        required: true
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    cep: {
-                        required: true
-                    },
-                    telefone: {
-                        required: true
-                    },
-                    cpf: {
-                        required: true,
-                        cpf:true
-                    },
-                    senha: {
-                        required:true
-                    },
-                    novasenha:{
-                        required: true
-                    },
+                $("#cpf").mask('000000000-00')
 
-                },
-                messages: {
-                    nome: 'Por favor, insira o seu nome'
-                },
-                submitHandler: function (form) {
-                    console.log(form)
-                },
-                invalidHandler: function (evento, validador) {
-                    let camposIncorretos = validador.numberOfInvalids();
-                    if (camposIncorretos) {
-                        alert(`Existem ${camposIncorretos} campos Incorretos`)
+                $('form').validate({
+                    rules: {
+                        nome: {
+                            required: true
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        cep: {
+                            required: true
+                        },
+                        telefone: {
+                            required: true
+                        },
+                        cpf: {
+                            required: true,
+                            cpf: true
+                        },
+                        /*    senha: {
+                                required:true
+                            },
+                            novasenha:{
+                                required: true
+                            },*/
+
+                    },
+                    messages: {
+                        nome: 'Por favor, insira o seu nome'
+                    },
+                    submitHandler: function (form) {
+                        console.log(form)
+                    },
+                    invalidHandler: function (evento, validador) {
+                        let camposIncorretos = validador.numberOfInvalids();
+                        if (camposIncorretos) {
+                            alert(`Existem ${camposIncorretos} campos Incorretos`)
+                        }
                     }
-                }
 
-            })
-        }) </script>
-    <script src="./assets/js/cadastro.js"></script>
+                })
+            }) </script>
+        <!--<script src="./assets/js/cadastro.js"></script>-->
 </body>
 
 </html>
